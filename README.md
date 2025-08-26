@@ -28,7 +28,15 @@ The website includes:
 - Accessible navigation with `aria-current` and skip link  
 - Basic forms (demo only) with client-side JavaScript alerts  
 - Simple CSS and JS in `css/` and `js/` folders  
-- Image placeholders included for bakery products  
+- Image placeholders included for bakery products
+
+## Wireframe
+The wireframe outlines the basic layout for each page before design implementation:  
+- *Home:* Hero image, featured products, call-to-action  
+- *About:* Story of Cloud Cakes, images of the bakery/team  
+- *Products:* Grid of cakes, pastries, breads with prices  
+- *Custom Orders:* Form for customers to request cakes/events  
+- *Contact:* Map, address, enquiry form
 
 ## Sitemap
 Common structure:  
