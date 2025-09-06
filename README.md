@@ -55,5 +55,3 @@ Common structure:
 ## Changelog
 - **1.0.0** – Initial Part 1 scaffold committed (HTML, CSS, JS, README).  
 
-## References
-Add all sources used for text and images (e.g., Unsplash, Pexels, company pages). Use your institution’s referencing style.  
