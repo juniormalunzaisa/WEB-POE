@@ -1,0 +1,156 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Cakes | Bite into Bliss</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #cce7ff, #99d0ff);
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: rgba(0, 102, 204, 0.85);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 { font-size: 2.5rem; margin-bottom: 5px; }
+    header p { font-size: 1.2rem; font-style: italic; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav ul li { margin: 0 15px; }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: 0.3s;
+    }
+    nav ul li a:hover { background-color: white; color: #0066cc; border-radius: 5px; }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 80px 20px 40px; /* extra bottom padding for images */
+      overflow: hidden;
+      background: linear-gradient(to bottom, #cce7ff, #99d0ff);
+    }
+
+    .clouds {
+      position: absolute;
+      top: 0;
+      left: -200%;
+      width: 400%;
+      height: 100%;
+      background: url('img/Screenshot 2025-08-12 123551.png') repeat-x;
+      background-size: contain;
+      opacity: 0.6;
+      animation: moveClouds 60s linear infinite;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes moveClouds { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    .hero-content { position: relative; z-index: 2; }
+    .hero h2 { font-size: 2rem; margin-bottom: 20px; color: #004080; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; color: #003366; }
+    .hero img { max-width: 300px; border-radius: 15px; box-shadow: 0 8px 15px rgba(0,0,0,0.2); transition: transform 0.3s; }
+    .hero img:hover { transform: scale(1.05); }
+
+    /* New Gallery Below Hero */
+    .hero-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto 60px;
+      padding: 0 20px;
+    }
+
+    .hero-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .hero-gallery img:hover { transform: scale(1.05); }
+
+    /* Footer */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Cloud Cakes</h1>
+    <p><em>Bite into Bliss</em></p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="clouds"></div>
+      <div class="hero-content">
+        <h2>Welcome to Cloud Cakes</h2>
+        <p>Experience cakes so light and fluffy, they melt like clouds in your mouth.</p>
+        <img src="img/Screenshot 2025-08-12 123551.png" alt="Cloud Cakes Logo">
+      </div>
+    </section>
+ <!-- Gallery Below Hero -->
+<section class="hero-gallery">
+  <div class="gallery-item">
+    <img src="img/vanilla_cupcake_featured_blog.webp" alt="Cupcake Decorating">
+    <p>Cupcake Decorating</p>
+  </div>
+  <div class="gallery-item">
+    <img src="img/istockphoto-1440131537-612x612.jpg" alt="Order Now">
+    <p>Order Now</p>
+  </div>
+  <div class="gallery-item">
+    <img src="img/597a7d8ff53b2e421bf0cce054465eb9.jpg" alt="Deli Cakes">
+    <p>Deli Cakes</p>
+  </div>
+  <!-- Add more gallery items here -->
+</section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Cloud Cakes. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+

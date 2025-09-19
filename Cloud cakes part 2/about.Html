@@ -1,0 +1,178 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Cloud Cakes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+      background: linear-gradient(to bottom, #cce7ff, #99d0ff);
+    }
+
+ /* Cloud background layer */
+.clouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('img/Screenshot\ 2025-08-12\ 123551.png') repeat-x; /* <-- Your own image here */
+  background-size: 800px 400px; /* tweak size if needed */
+  animation: drift 60s linear infinite;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+@keyframes drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+    /* Header */
+    header {
+      background-color: rgba(0, 102, 204, 0.85);
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: white;
+      text-shadow: 2px 2px #6692cc;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: #80bfff;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #3399ff;
+      transform: scale(1.1);
+    }
+
+    /* Main Content */
+    main {
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    section {
+      background: rgba(255,255,255,0.9);
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 700px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    section img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin: 15px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    .divider {
+      width: 100%;
+      height: 20px;
+      background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 20" xmlns="http://www.w3.org/2000/svg"><path d="M0,10 Q125,0 250,10 T500,10" fill="transparent" stroke="%23004d99" stroke-width="3"/></svg>') repeat-x;
+      background-size: 250px 20px;
+      margin: 15px 0;
+    }
+
+    footer {
+      background-color: rgba(0, 102, 204, 0.85);
+      color: white;
+      padding: 15px 0;
+      margin-top: 30px;
+      box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cloud background layer -->
+  <div class="clouds"></div>
+
+  <!-- Header -->
+  <header>
+    <h1>About Cloud Cakes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ <!-- Main Content -->
+<main>
+  <section>
+    <h2>Our Story</h2>
+    <div class="divider"></div>
+    <p>Cloud Cakes was born from a tiny kitchen in Cape Town, where late-night baking experiments turned into a full-blown passion. What started as a single recipe for the fluffiest sponge cake slowly grew into a neighborhood secret — the kind of place where every bite felt like a hug from the inside out. Over the years, our little bakery transformed into a beloved destination for celebrations, comfort, and pure joy. Each cake we create carries a sprinkle of that same dream: to bring people together over slices of happiness, one layer at a time.</p>
+    <img src="img/8389wacky-cake-viiilutzflcat4x3-0ea263e95efa47419a09da9c615b0cae.jpg" alt="Fluffy Cloud Cake">
+  </section>
+
+  <section>
+    <h2>Mission & Vision</h2>
+    <div class="divider"></div>
+    <p><strong>Mission:</strong> At Cloud Cakes, our mission is to craft desserts that feel like more than just sweets. We blend tradition with creativity, sourcing the finest ingredients and infusing every recipe with care and imagination. We want every cake to spark a moment of delight, whether it’s shared at a birthday, wedding, or a simple Tuesday afternoon tea.</p>
+    <p><strong>Vision:</strong> Our vision is to become a household name for quality, creativity, and comfort — a bakery where innovation meets nostalgia. We dream of Cloud Cakes being known not just for our flavors, but for the joy, warmth, and connection our desserts bring to people’s lives across the world.</p>
+    <img src="img/three-layer-strawberry-cake-6883d7092dffe.avif" alt="Decorated Cake">
+  </section>
+
+  <section>
+    <h2>Meet the Team</h2>
+    <div class="divider"></div>
+    <p>Behind every Cloud Cake is a team of peaceful, passionate creators who treat baking as both an art and a calling. Mornings in our kitchen start with laughter, music, and the comforting aroma of freshly baked layers cooling on the racks. Our decorators craft each design with the patience of sculptors and the heart of storytellers, ensuring every swirl of frosting feels personal. It’s this calm dedication and genuine love for the craft that turns simple ingredients into desserts worth celebrating.</p>
+    <img src="img/Espresso-Bakery-Our-Team-Bakery-Team-alt-edit.jpg" alt="Cloud Cakes Team">
+  </section>
+</main>
+  <footer>
+    <p>&copy; 2025 Cloud Cakes. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
