@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Cakes</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #fff8fc; /* soft pastel background */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #c45b9e; /* cake-pink */
+      margin-bottom: 2rem;
+    }
+
+    /* Flexbox container */
+    .cakes-container {
+      display: flex;
+      flex-wrap: wrap; /* allows wrapping on smaller screens */
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    /* Cake cards */
+    .cake-card {
+      flex: 1 1 250px; /* grow, shrink, base width */
+      max-width: 300px;
+      background: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cake-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+    }
+
+    .cake-card h2 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.5rem;
+      color: #6a316e; /* rich purple */
+    }
+
+    .cake-card p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* Hover effect */
+    .cake-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cloud Cakes</h1>
+  <div class="cakes-container">
+    <div class="cake-card">
+      <img src="cake1.jpg" alt="Strawberry Cloud Cake">
+      <h2>Strawberry Cloud</h2>
+      <p>Fluffy sponge with strawberry cream.</p>
+    </div>
+    <div class="cake-card">
+      <img src="cake2.jpg" alt="Chocolate Dream Cake">
+      <h2>Chocolate Dream</h2>
+      <p>Rich cocoa layers with a creamy center.</p>
+    </div>
+    <div class="cake-card">
+      <img src="cake3.jpg" alt="Lemon Bliss Cake">
+      <h2>Lemon Bliss</h2>
+      <p>Refreshing citrus cake with soft icing.</p>
+    </div>
+  </div>
+
+</body>
+</html>
