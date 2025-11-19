@@ -1,0 +1,240 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ====================== SEO & META ====================== -->
+  <title>About Cloud Cakes | Best Cakes in Cape Town</title>
+  <meta name="description" content="Discover Cloud Cakes — Cape Town's most beloved bakery, crafting joyful desserts with love, creativity, and passion.">
+  <meta name="keywords" content="Cloud Cakes, bakery, cakes, cupcakes, Cape Town, desserts, wedding cakes, birthday cakes, custom cakes, consultation">
+  <meta name="author" content="Cloud Cakes Bakery">
+  <link rel="canonical" href="https://yourdomain.com/about.html">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="About Cloud Cakes | Cape Town's Joyful Bakery">
+  <meta property="og:description" content="From passion to perfection — meet the team behind Cape Town's fluffiest, most magical cakes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/about.html">
+  <meta property="og:image" content="https://yourdomain.com/img/three-layer-strawberry-cake-6883d7092dffe.avif">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- jQuery & jQuery UI (for Date Picker) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+
+  <style>
+    /* === Your Original CSS (unchanged) === */
+    *, *::before, *::after {margin:0;padding:0;box-sizing:border-box;}
+    html {font-size:16px;line-height:1.5;scroll-behavior:smooth;}
+    body {font-family:'Poppins',sans-serif;color:#333;text-align:center;position:relative;overflow-x:hidden;
+          background:linear-gradient(to bottom,#cce7ff,#99d0ff);font-size:1rem;font-weight:400;line-height:1.6;letter-spacing:0.01em;}
+    h1 {font-size:2.5rem;font-weight:700;line-height:1.2;letter-spacing:0.02em;margin-bottom:0.5rem;}
+    h2 {font-size:2rem;font-weight:600;line-height:1.3;letter-spacing:0.015em;margin-bottom:1rem;color:var(--primary-dark);}
+    h3 {font-size:1.5rem;font-weight:500;line-height:1.4;letter-spacing:0.01em;margin-bottom:0.75rem;}
+    p {margin-bottom:1rem;}
+    strong {font-weight:600;}
+    :root {
+      --primary:#0066cc;--primary-light:#80bfff;--primary-dark:#004080;--accent:#ff6699;
+      --text:#333;--text-light:#666;--background:#fff;--shadow:rgba(0,0,0,0.1);
+    }
+    .clouds {position:fixed;top:0;left:0;width:200%;height:100%;background:url('img/Screenshot 2025-08-12 123551.png') repeat-x;
+             background-size:800px 400px;animation:drift 60s linear infinite;opacity:0.3;z-index:-1;}
+    @keyframes drift {from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    header {background:rgba(0,102,204,0.85);padding:1.5rem 1.25rem;box-shadow:0 4px 6px var(--shadow);}
+    header h1 {color:white;text-shadow:2px 2px #6692cc;font-family:'Dancing Script',cursive;font-size:3rem;}
+    nav ul {list-style:none;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem;}
+    nav a {text-decoration:none;color:white;background:var(--primary-light);padding:0.5rem 1rem;border-radius:20px;
+           font-weight:500;transition:all .3s ease;display:inline-block;}
+    nav a:hover, nav a[aria-current="page"] {background:var(--primary);transform:scale(1.05);}
+    main {padding:2rem 1.25rem;display:flex;flex-direction:column;align-items:center;}
+    section {background:rgba(255,255,255,0.9);margin:1.5rem auto;padding:1.5rem;max-width:700px;border-radius:20px;
+             box-shadow:0 6px 20px var(--shadow);text-align:center;position:relative;opacity:0;transform:translateY(30px);
+             transition:all .8s ease;}
+    section.visible {opacity:1;transform:translateY(0);}
+    section img {max-width:100%;border-radius:15px;margin:1rem 0;box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+    .divider {width:100%;height:20px;background:url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 20" xmlns="http://www.w3.org/2000/svg"><path d="M0,10 Q125,0 250,10 T500,10" fill="transparent" stroke="%23004d99" stroke-width="3"/></svg>') repeat-x;
+              background-size:250px 20px;margin:1rem 0;}
+    footer {background:rgba(0,102,204,0.85);color:white;padding:1rem 0;margin-top:2rem;box-shadow:0 -4px 6px var(--shadow);}
+    
+    /* === NEW: Form Styling === */
+    .form-group {margin-bottom:1rem;text-align:left;max-width:500px;margin-left:auto;margin-right:auto;}
+    label {display:block;font-weight:600;margin-bottom:0.4rem;color:var(--primary-dark);}
+    input[type=text], input[type=email], input[type=tel], textarea {width:100%;padding:0.7rem;border:1px solid #ccc;border-radius:8px;font-family:inherit;}
+    input:focus, textarea:focus {outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(0,102,204,0.2);}
+    .error {color:#e74c3c;font-size:0.9rem;margin-top:0.3rem;display:none;}
+    button {background:var(--accent);color:white;padding:0.8rem 2rem;border:none;border-radius:30px;font-weight:600;
+            cursor:pointer;transition:background .3s;margin-top:1rem;}
+    button:hover {background:#e55a8a;}
+
+    /* Responsive */
+    @media (max-width:768px) {
+      html{font-size:14px;}
+      header h1{font-size:2.5rem;}
+      nav ul{gap:0.5rem;}
+      nav a{padding:0.4rem 0.8rem;font-size:0.9rem;}
+      section{padding:1.25rem;margin:1.25rem 0.75rem;}
+    }
+    @media (max-width:480px) {
+      html{font-size:13px;}
+      header h1{font-size:2rem;}
+      nav ul{flex-direction:column;align-items:center;gap:0.5rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="clouds"></div>
+
+  <header>
+    <h1>About Cloud Cakes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Existing Sections -->
+    <section>
+      <h2>Our Story</h2>
+      <div class="divider"></div>
+      <p>Cloud Cakes began in a tiny Cape Town kitchen where late-night baking turned passion into perfection. From fluffy sponge cakes to iconic layered desserts, every creation carries warmth, joy, and a hint of magic.</p>
+      <img src="img/8389wacky-cake-viiilutzflcat4x3-0ea263e95efa47419a09da9c615b0cae.jpg" alt="Fluffy Cloud Cake on display">
+    </section>
+
+    <section>
+      <h2>Mission & Vision</h2>
+      <div class="divider"></div>
+      <p><strong>Mission:</strong> Craft desserts that feel like memories — combining creativity and care with locally sourced ingredients.</p>
+      <p><strong>Vision:</strong> To become a household name for joy, creativity, and connection through cakes that bring people together.</p>
+      <img src="img/three-layer-strawberry-cake-6883d7092dffe.avif" alt="Decorated strawberry cake with layers">
+    </section>
+
+    <section>
+      <h2>Meet the Team</h2>
+      <div class="divider"></div>
+      <p>Our bakers are dreamers and creators — from sunrise whisking to midnight frosting, every Cloud Cake is a story told in buttercream.</p>
+      <img src="img/Espresso-Bakery-Our-Team-Bakery-Team-alt-edit.jpg" alt="Cloud Cakes bakery team posing with cakes">
+    </section>
+
+    <!-- NEW: Book a Consultation Form with Date Picker -->
+    <section id="consultation">
+      <h2>Book a Custom Cake Consultation</h2>
+      <div class="divider"></div>
+      <p>Planning a wedding, birthday, or special event? Let’s design your dream cake together!</p>
+
+      <form id="consultForm" novalidate>
+        <div class="form-group">
+          <label for="fullName">Full Name <span style="color:var(--accent)">*</span></label>
+          <input type="text" id="fullName" required>
+          <span class="error" id="nameError">Please enter your name.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span style="color:var(--accent)">*</span></label>
+          <input type="email" id="email" required>
+          <span class="error" id="emailError">Please enter a valid email.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone">
+          <span class="error" id="phoneError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="eventDate">Preferred Consultation Date <span style="color:var(--accent)">*</span></label>
+          <input type="text" id="eventDate" readonly required>
+          <span class="error" id="dateError">Please pick a date.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell us about your event (optional)</label>
+          <textarea id="message" rows="4" maxlength="500"></textarea>
+          <span class="error" id="msgError"></span>
+        </div>
+
+        <button type="submit">Request Consultation</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cloud Cakes. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Scroll reveal
+    const sections = document.querySelectorAll("section");
+    const reveal = () => sections.forEach(s => {
+      if (s.getBoundingClientRect().top < window.innerHeight - 100) s.classList.add("visible");
+    });
+    window.addEventListener("scroll", reveal); reveal();
+
+    // jQuery: Date Picker + Form Validation
+    $(function() {
+      // Date Picker
+      $("#eventDate").datepicker({
+        dateFormat: "dd MM yy",
+        minDate: 0,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "c:c+2"
+      });
+
+      // Form Validation
+      $("#consultForm").on("submit", function(e) {
+        let valid = true;
+        $(".error").hide();
+
+        // Name
+        if (!$("#fullName").val().trim()) {
+          $("#nameError").show(); valid = false;
+        }
+        // Email
+        const email = $("#email").val().trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email || !emailRegex.test(email)) {
+          $("#emailError").show(); valid = false;
+        }
+        // Phone (optional but must be valid if provided)
+        const phone = $("#phone").val().trim();
+        if (phone && !/^\+?\d[\d\s\-\(\)]{8,}$/.test(phone)) {
+          $("#phoneError").text("Enter a valid phone number.").show(); valid = false;
+        }
+        // Date
+        if (!$("#eventDate").val()) {
+          $("#dateError").show(); valid = false;
+        }
+
+        if (!valid) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Success (replace with AJAX in production)
+        alert("Thank you! We’ll contact you to confirm your consultation.");
+        // e.preventDefault(); // Remove to allow real submission
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+

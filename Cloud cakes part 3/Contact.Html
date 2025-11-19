@@ -1,0 +1,298 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Cloud Cakes — visit our Cape Town bakery, explore our gallery, or send us a message online." />
+  <meta name="keywords" content="Cloud Cakes, bakery, contact, Cape Town cakes, cake shop, wedding cakes, cupcakes, desserts" />
+  <meta name="author" content="Cloud Cakes" />
+  <title>Contact | Cloud Cakes</title>
+
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7fbff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 10px 0 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Container */
+    .contact-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    h2, h3 {
+      color: #0288d1;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #0288d1;
+      margin: 0 auto 20px;
+      border-radius: 2px;
+    }
+
+    p {
+      margin: 0 0 10px;
+      text-align: center;
+    }
+
+    a {
+      color: #0288d1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Map Section */
+    .map-container {
+      margin: 25px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0288d1;
+      box-shadow: 0 0 5px rgba(2,136,209,0.3);
+    }
+
+    button {
+      background: #0288d1;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #026aa7;
+    }
+
+    /* Gallery */
+    .contact-gallery {
+      margin-top: 50px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.03);
+    }
+
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background: #0288d1;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cloud Cakes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <!-- Contact Info -->
+    <section class="contact-info">
+      <h2>Our Locations</h2>
+      <div class="divider"></div>
+      <p><strong>Main Shop:</strong> 13 Long Street, Cape Town</p>
+      <p><strong>Branch:</strong> 45 Cannabis Walk, Cape Town</p>
+
+      <h3>Contact Details</h3>
+      <div class="divider"></div>
+      <p>Email: <a href="mailto:info@cloudcakes.co.za">info@cloudcakes.co.za</a></p>
+      <p>Phone: <a href="tel:+2770732748">+27 707 32748</a></p>
+
+      <h3>Find Us on the Map</h3>
+      <div class="divider"></div>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.291524441081!2d18.517558315258287!3d-33.92584078070224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdbf4a7b6d4a3d%3A0x1a2b3c4d5e6f7a8b!2sLong%20Street%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1690000000000!5m2!1sen!2sza" 
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <div class="divider"></div>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="contact-gallery">
+      <h2>Our Gallery</h2>
+      <div class="divider"></div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="img/Raspberry-Fudge-Torte_EXPS_THCA19_20888_C02_23_4b.jpg" alt="Cake 1"><p>Chocolate Bliss</p></div>
+        <div class="gallery-item"><img src="img/One_Piece_-_Luffy_Edible_Cake.webp" alt="Cake 2"><p>Vanilla Cloud</p></div>
+        <div class="gallery-item"><img src="img/img_2272.300x0.jpg" alt="Cake 3"><p>Wedding Cake</p></div>
+        <div class="gallery-item"><img src="img/41Kx66LgjNL._AC_UY1000_.jpg" alt="Cake 4"><p>Apron</p></div>
+        <div class="gallery-item"><img src="img/irish_bakery_therapeutic.jpeg" alt="Cake 5"><p>Healthy Bakery</p></div>
+        <div class="gallery-item"><img src="img/free-photo-of-wedding-couple-with-a-cake.jpeg" alt="Cake 6"><p>Happy Wedding</p></div>
+        <div class="gallery-item"><img src="img/ph_37265_143649.jpg" alt="Cake 7"><p>Friday Frenzy</p></div>
+        <div class="gallery-item"><img src="img/aquilla40kspacemarinecake.jpg" alt="Cake 8"><p>Custom Cakes</p></div>
+        <div class="gallery-item"><img src="img/6295c94ec0ec459a586831feb45af4dc.jpg" alt="Cake 9"><p>Blueberry Magic</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cloud Cakes. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple JS Form Validation
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      alert("Thank you for contacting Cloud Cakes! We’ll get back to you soon.");
+      document.getElementById("contactForm").reset();
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
