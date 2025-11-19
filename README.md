@@ -1,81 +1,56 @@
- Cloud Cakes – Website Project
-Student Information
 
-Name: Junior Malunzaisa
-Student Number: ST10478297
-Subject & Code: WEB – 5020
+## Student Information
+- **Name:** Junior Malunzaisa  
+- **Student Number:** ST10478297  
+- **Subject & Code:** WEB – 5020  
 
-Project Overview
+## Project Overview
+This repository contains a fully functional, beginner-friendly bakery website built with **HTML5, CSS3, and vanilla JavaScript**. The site is designed with clarity, simplicity, and accessibility as top priorities while showcasing the warmth and sweetness of Cloud Cakes.
 
-This repository contains the starter website for Cloud Cakes, a small bakery dedicated to delivering warm, delightful treats to local customers. The site is built with clarity, simplicity, and accessibility at heart.
+### Website Goals & KPIs
+**Primary Goal:**  
+Attract local customers, showcase bakery products, and encourage pre-orders/custom orders.
 
-It includes a clean, user-friendly layout, a minimum of five linked HTML pages, and a functional navigation system. Content areas are prepared for text and images that bring the brand’s sweetness to life.
+**Key Performance Indicators (KPIs):**
+- Increase in website visits
+- Growth in customer enquiries
+- Higher number of pre-orders
 
-Website Goals & KPIs
+### Key Features
+- Five fully linked, semantic HTML pages:
+  - `index.html` – Home
+  - `about.html` – About Us
+  - `products.html` – Products
+  - `enquiry.html` – Custom Orders / Enquiry
+  - `contact.html` – Contact
+- Accessible navigation with ARIA attributes, skip-to-content link, and proper focus states
+- Responsive design (mobile, tablet, desktop) using CSS Flexbox, Grid, and media queries
+- Clean product grid with image placeholders (ready for real photos)
+- Functional enquiry and contact forms with client-side validation (JavaScript)
+- - SEO-friendly: proper `<title>`, meta descriptions, semantic headings, and mobile-first viewport
+- Accessibility enhancements: descriptive alt text, ARIA labels, high-contrast colors, keyboard navigation
 
-Goal:
-Attract local customers, showcase bakery products, and encourage pre-orders.
+### Wireframe Structure (All Pages)
+- **Header** – Logo + Navigation + Skip Link
+- **Main Content** – Page-specific sections
+- **Footer** – Contact info, social links, copyright
 
-Key Performance Indicators:
+**Page Breakdown:**
+- **Home** – Hero banner, featured products, call-to-action button
+- **About** – Bakery story, mission, values, and team photos
+- **Products** – Responsive grid of cakes, pastries, breads with descriptions
+- **Enquiry** – Custom order form (flavor, size, date, message)
+- **Contact** – Address, embedded map placeholder, contact form, hours
 
-Increase in website visits
+## Technologies Used
+- HTML5 (semantic elements)
+- CSS3 (Flexbox, Grid, media queries, custom properties)
+- Vanilla JavaScript (form validation, smooth scroll, mobile menu toggle)
+- Google Fonts (e.g., "Poppins" or "Playfair Display" for a sweet feel)
 
-Growth in customer enquiries
-
-Higher number of pre-orders
-
-Key Features
-
-Five accessible, semantic HTML pages: Home, About, Products, Enquiry, and Contact
-
-Navigation system with ARIA attributes and a skip link for accessibility
-
-Basic enquiry and contact forms with simple client-side JavaScript
-
-Organized folder structure with /css and /js directories
-
-Image placeholders for products
-
-Responsive design using CSS media queries
-
-Wireframe Overview
-
-Each page follows a simple, organized structure:
-
-Home: Hero banner, highlighted products, call-to-action
-
-About: Bakery story, mission, and team visuals
-
-Products: Clean product grid showcasing cakes, pastries, and breads
-
-Custom Orders / Enquiry: Simple form for requesting special bakes
-
-Contact: Map, address, and contact form
-
-Sitemap
-
-index.html – Home
-
-about.html – About
-
-products.html – Products
-
-enquiry.html – Enquiry / Custom Orders
-
-contact.html – Contact
-
-Project Progress Overview
-
-Built complete HTML scaffolding using semantic tags throughout
-
-Added styling for consistent colors, fonts, and layout
-
-Implemented a responsive design for mobile and tablet screens
-
-Added images, content, and a working navigation bar across all pages
-
-Included JavaScript interactions for forms and scroll animations
-
-Enhanced accessibility using ARIA labels and descriptive alt text
-
-Improved SEO with proper titles, meta descriptions, and mobile-friendly structure
+## Setup & Installation
+1. Clone the repository:
+ ```bash
+ git clone https://github.com/yourusername/cloud-cakes.git
+- Smooth scroll animations and interactive elements
+- Organized folder structure:
